@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>
+    triprequest
+    </title>
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+#lab{
+    font-size: 18px;
+    letter-spacing: 1px;
+font-family: Arial;
+float: left;
+margin-left: 40px;
+margin-top: 32px;
+color: darkslategray;
+
+
+
+}
+#dn{
+    background-color: #618685;
+    color: white;
+    font-size: 16px;
+    font-family: Arial;
+    width: 190px;
+    float: left;
+margin-left: 40px;
+letter-spacing: 1px;
+margin-top: 3px;
+border: #618685;
+border-radius: 5px;
+height: 30px;
+margin-right: 30px;
+
+}
+
+.vl {
+        border-left: 10px solid #618685;
+        height: 500px;
+        display: flex;
+      }
+
+    #destipart{
+        display:grid;
+    }  
+    #travelpart{
+        display: grid;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+</style>
+<body style="margin-left:0px;margin-right:0px;">
+    
+      
+
+    <br><br>
+   
+   <!---<div id="boderwhite" style="width:max-content;border: solid;border-color: #618685;height:200px;border-radius: 10px;padding:5px;">-->
+        <div class="container">
+        <div id="destipart">
+        <label for="dn" id="lab">Choose a destination:</label><br>
+        <select name="desti" id="dn">
+            
+        <option value="domestic">Domestic</option>
+        <option value="international">International</option>
+        </select>
+   </div>
+<div id="travelpart">
+        <label for="tra" id="lab">Travel mode selection:</label><br>
+        <select name="modeselection" id="dn">
+        <option value="air">Air</option>
+        <option value="road">Road-ways Car/Bus</option>
+        <option value="rail">Rail</option>
+        </select>
+    
+</div>
+<div id="travelpart">
+    <label for="tra" id="lab">Travel mode selection:</label><br>
+    <select name="modeselection" id="dn">
+    <option value="air">Air</option>
+    <option value="road">Road-ways Car/Bus</option>
+    <option value="rail">Rail</option>
+    </select>
+
+</div>
+        </div>
+        
+       <!--<div class="vl"></div>-->
+       
+        
+        
+</body>
+</html>
