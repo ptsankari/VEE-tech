@@ -1,13 +1,27 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>
     triprequest
     </title>
     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <style>
+[class*="dropdown"]{
+color: #618685;
+background-color: white;
+}
+
+button:hover {
+    background-image: none;
+    background-color: red;
+}
+
+
     * {
   box-sizing: border-box;
 }
@@ -16,21 +30,20 @@
     letter-spacing: 1px;
 font-family: Arial;
 float: left;
-margin-left: 40px;
+margin-left: 25px;
 margin-top: 32px;
-color: darkslategray;
+
 
 
 
 }
 #dn{
-    background-color: #618685;
-    color: white;
+  
     font-size: 16px;
     font-family: Arial;
     width: 190px;
     float: left;
-margin-left: 40px;
+margin-left: 25px;
 letter-spacing: 1px;
 margin-top: 3px;
 border: #618685;
@@ -68,43 +81,47 @@ margin-right: 30px;
       
 
     <br><br>
-   
+   <center>
    <!---<div id="boderwhite" style="width:max-content;border: solid;border-color: #618685;height:200px;border-radius: 10px;padding:5px;">-->
         <div class="container">
         <div id="destipart">
         <label for="dn" id="lab">Choose a destination:</label><br>
-        <select name="desti" id="dn">
-            
-        <option value="domestic">Domestic</option>
-        <option value="international">International</option>
-        </select>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Choose:
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Internation</a></li>
+            <li><a class="dropdown-item" href="#">Domestic</a></li>
+          </ul>
+        </div>
+
    </div>
 <div id="travelpart">
         <label for="tra" id="lab">Travel mode selection:</label><br>
-        <select name="modeselection" id="dn">
-        <option value="air">Air</option>
-        <option value="road">Road-ways Car/Bus</option>
-        <option value="rail">Rail</option>
-        </select>
+      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Choose:
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Air</a></li>
+            <li><a class="dropdown-item" href="#">Road-Car/Bus</a></li>
+            <li><a class="dropdown-item" href="#">Railways</a></li>
+          </ul>
+        </div>
+        
     
 </div>
 
         </div>
         
-
+   </center>
        <!--<div class="vl"></div>-->
        
-        <div class="dropdown show">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown link
-  </a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
+       
         
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
